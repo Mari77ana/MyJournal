@@ -21,8 +21,7 @@ struct ListView: View{
                 Text("MY JOURNAL").bold().font(.title).padding()
                 
                 List(){
-                    ForEach(myJournal.getEnteries()){
-                        entry in Text(entry.title)
+                    ForEach(myJournal.getEnteries()) { entry in Text(entry.title)
                         
                     }
                 }

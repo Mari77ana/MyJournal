@@ -103,10 +103,10 @@
 			isa = PBXGroup;
 			children = (
 				078C9F7A2ACEA08E007C4EBE /* Gernal_swiftui_lektionApp.swift */,
-				078C9FAC2ACEDBAD007C4EBE /* Views */,
-				078C9FAA2ACED86B007C4EBE /* JournalEntry.swift */,
-				078C9FA82ACED84A007C4EBE /* Journal.swift */,
 				078C9F7C2ACEA08E007C4EBE /* ContentView.swift */,
+				078C9FAC2ACEDBAD007C4EBE /* Views */,
+				078C9FB12ACF50F2007C4EBE /* ViewModel */,
+				078C9FB22ACF510F007C4EBE /* Model */,
 				078C9F7E2ACEA090007C4EBE /* Assets.xcassets */,
 				078C9F802ACEA090007C4EBE /* Preview Content */,
 			);
@@ -145,6 +145,22 @@
 				078C9FAF2ACEDCC4007C4EBE /* PopupView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		078C9FB12ACF50F2007C4EBE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				078C9FA82ACED84A007C4EBE /* Journal.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		078C9FB22ACF510F007C4EBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				078C9FAA2ACED86B007C4EBE /* JournalEntry.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

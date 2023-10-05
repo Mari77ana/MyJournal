@@ -24,7 +24,7 @@ struct ContentView: View {
              ListView(myJournal: myJournal, showPopup: $showPopup)
             
             if showPopup{
-                PopupView(journal: Journal(),showPopup: $showPopup).shadow(color: .black, radius: 30)
+                PopupView(journal: myJournal ,showPopup: $showPopup).shadow(color: .black, radius: 30)
             }
                
                

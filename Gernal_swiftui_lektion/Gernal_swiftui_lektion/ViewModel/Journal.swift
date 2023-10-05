@@ -1,5 +1,8 @@
 import Foundation
 
+// ViewModel
+
+
 class Journal: ObservableObject { // Journal är inlyssnande för variablerna som kan synas
     
     // Med private exponeras inte anteckningar, vi hämtar dom istället
@@ -18,6 +21,10 @@ class Journal: ObservableObject { // Journal är inlyssnande för variablerna so
     // Funktionen hämtar -> returnerar anteckningar, get är en inbyggd funktion
     func getEnteries() -> [JournalEntry] {
         return entries
+    }
+    
+    func addEntry(journalEntry: JournalEntry) -> Void {
+        entries.append(journalEntry)
     }
     
 }

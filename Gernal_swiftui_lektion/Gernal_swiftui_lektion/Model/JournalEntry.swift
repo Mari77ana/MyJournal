@@ -5,6 +5,8 @@
 //  Created by Mariana Laic on 2023-10-05.
 //
 
+
+// Model
 import Foundation
 
 // Identifiable när List(){} -> (en komponent i swiftUi) används för den vill ha id på föremålen i Listan som ska visas i View.

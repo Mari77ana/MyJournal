@@ -16,7 +16,9 @@ import SwiftUI
 struct PopupView: View {
     //kopplat med $, den lyssnar på förändringar när man skriver in i textfield, där av @State
     
+    // ViewModel
     @ObservedObject var journal: Journal
+    
     @State var txtTitle: String = ""
     @State var txtDescription: String = ""
     @Binding var showPopup: Bool
@@ -37,7 +39,11 @@ struct PopupView: View {
                 
                 VStack(spacing: 20){
                     Button(action: {
-                        // Add more enteries
+                        
+                        let journalEntry = JournalEntry(title: txtTitle, description: txtDescription, date: Date())
+            
+                        journal.addEntry(journalEntry: journalEntry)
+                        
                     }, label: {
                         Text("Save").padding().background(.brown)
                             .foregroundStyle(.black).bold().cornerRadius(10)
