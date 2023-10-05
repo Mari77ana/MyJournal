@@ -1,10 +1,3 @@
-//
-//  Journal.swift
-//  Gernal_swiftui_lektion
-//
-//  Created by Mariana Laic on 2023-10-05.
-//
-
 import Foundation
 
 class Journal: ObservableObject { // Journal är inlyssnande för variablerna som kan synas
