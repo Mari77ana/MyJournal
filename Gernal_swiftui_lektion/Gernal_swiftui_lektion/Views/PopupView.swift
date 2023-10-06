@@ -39,14 +39,20 @@ struct PopupView: View {
                 
                 VStack(spacing: 20){
                     Button(action: {
+                        journal.addEntry(journalEntry: JournalEntry(title: txtTitle, description: txtDescription, date: Date()))
+                        txtTitle = ""
+                        txtDescription = ""
                         
+                        /*
                         let journalEntry = JournalEntry(title: txtTitle, description: txtDescription, date: Date())
             
                         journal.addEntry(journalEntry: journalEntry)
+                         */
                         
                     }, label: {
-                        Text("Save").padding().background(.brown)
-                            .foregroundStyle(.black).bold().cornerRadius(10)
+                        Text("Save").frame(width: 200, height: 40)
+                            .background(.brown).cornerRadius(20)
+                            .foregroundStyle(.black)
                     })
                     Button(action: {
                         showPopup = false
